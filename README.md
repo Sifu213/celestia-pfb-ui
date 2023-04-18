@@ -1,12 +1,14 @@
 # celestia-pfb-ui
 <h1>UI for submitting PFB on a Celestia Ligh Node</h1>
 
-This repository contains all the ncessary files to get a simple UI to interect with your Light Node Celestion :
+This repository contains all the necessary files to get a simple UI to interact with your Light Node Celestia :
 - get your wallet balance
 - get the last block header commit hash
 - submit a PayForBLob transaction and get back the results
 
-For woking you will need to 
+FInd the live demo here : http://116.203.145.75/ 
+
+For deploying it on your server you will need to : 
 
 <h3>Install Apache</h3>
 <pre>sudo apt install apache2</pre>
