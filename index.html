@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form to interact with the light node Celestia</title>
+    <link rel="stylesheet" href="css/form.css">
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://docs.celestia.org/img/favicon.ico">
+</head>
+<body>
+    <h1>UI to interact with the light node Celestia</h1>
+    <div class="form-container">
+        <h2>Get node's infos</h2>
+        <div class="button-container">
+            <button class="center-button" onclick="check_balance()">Get balance</button>
+            <button class="center-button" onclick="get_block_header()">Get block header</button>
+        </div>
+    </div>
+    <br>
+
+
+<div class="form-container">
+  <h2>Submit a PFB transaction</h2>
+  <button type="button" class="center-button" onclick="generateNamespaceIdAndData()">Generate Random Data</button>
+
+  <label for="namespace_id">Namespace ID:</label>
+  <input type="text" id="namespace_id" name="namespace_id" required>
+
+  <label for="data">Data:</label>
+  <input type="text" id="data" name="data" required>
+
+ <button type="button" class="center-button" id="submit-button" onclick="submitPFBTransaction()">
+ Send PFB Transaction
+ <img src="loader.svg" class="loader "alt="loader" id="loader" style="display:none;">
+ </button>
+ 
+<div id="results" class="results" style="display:none;">
+  <h3>Results</h3>
+  <div>Height : <label id="height-label"></label></div>
+  <div>TxHash : <a id="txhash_link" href="#" target="_blank" class="txhash"></a></div>
+  <div>Shares : <label id="shares-label" class="shares"></label></div>
+</div>
+
+</div>
+
+
+
+    <script src="script.js"></script>
+    <!-- Ajouter la balise script pour charger jQuery depuis le CDN de Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>

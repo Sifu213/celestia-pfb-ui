@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url("https://celestia.org/static/home-hero-image-a13233e4c024277a50abe3188f975373.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+button:disabled {
+    background-color: #b4b4b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+padding: 10px;
+border-radius: 5px;
+border: none;
+box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+width: 95%;
+margin-bottom: 20px;
+}
+
+.txhash{
+font-size: 12px;
+
+}
+
+.shares{
+overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 95%;
+}
+
+
+.center-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.loader{
+    width: 25px;
+    vertical-align: middle;
+}
+
+.results{
+margin-top: 15px;
+    background-color: #e6e6e6;
+    padding: 5px;
+border-radius: 5px;
+}
