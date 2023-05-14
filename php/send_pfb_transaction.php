@@ -38,6 +38,7 @@ $json_response = json_decode($response, true);
 if (isset($json_response["height"]) && isset($json_response["txhash"])) {
     $height = $json_response["height"];
     $txhash = $json_response["txhash"];
+    sleep(7);
 
     // Construct url for getting the namespaced share
     $url = "http://localhost:26659/namespaced_shares/" . $namespace_id . "/height/" . $height;
